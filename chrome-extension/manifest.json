@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Email Assistant",
+  "version": "1.0.0",
+  "description": "AI-powered email reply generator for Gmail using Google Gemini",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
